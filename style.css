@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1d3557;
+    display:flex;
+    align-items:center;
+    gap: 10px;
+}
+
+.logo span {
+    color: #266aa1;
+    font-size:35px;
+}
+
+.btn-whats-top {
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+    color: white;
+    padding: 60px 8%;
+}
+
+.hero-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.vantagens span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+
+.card-formulario {
+    background-color: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card-formulario h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #1d3557;
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.campo input, .campo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.campo-duplo {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-cotar {
+    width: 100%;
+    padding: 14px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-cotar:hover {
+    background-color: #1eb854;
+}
+
+
+.diferenciais {
+    padding: 60px 8%;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.diferenciais h2 {
+    color: #1d3557;
+    margin-bottom: 40px;
+}
+
+.cards-grid {
+    display: flex;
+    gap: 25px;
+}
+
+.card-diferencial {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-diferencial h3 {
+    margin-bottom: 10px;
+    color: #457b9d;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d3557;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+    
+}
+
+.img-logo {
+    height:auto; 
+    width: auto;  
+    object-fit: contain; 
+    display: block;
+    max-height: 200px;
+}
+
+@media (max-width: 900px) {
+  
+.navbar, .hero, .diferenciais {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.hero-conteudo {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-texto h1 {
+    font-size: 1.8rem;
+}
+
+.card-formulario {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px; 
+}
+
+.cards-grid {
+    flex-direction: column;
+}
+
+}
+
+@media (max-width: 430px) {
+.logo span {
+    font-size: 20px; 
+}
+
+.btn-whats-top {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+}
+
+.hero-texto h1 {
+    font-size: 1.6rem;
+}
+}
